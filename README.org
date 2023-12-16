@@ -1,0 +1,48 @@
+#+title: Readme
+
+#+property: header-args :comments both :results values :exports both :noweb yes
+*** First attemp to pursude the beautiful of AI
+*** Some questions
+#+name: questions list
+- [ ] Does machine have knowledge?
+- [ ] Does machine can think?
+- [ ] Did they really know that they exist
+- [ ] Does machine have soul?
+- [ ] Does machine can understand the emojis they are using?
+- [ ] My collections on study AI, true AI, I don't care about those LLM.
+
+#+name: vermin/send-string-to-openai
+#+begin_src elisp
+(defun vermin/send-string-to-openai (prompt &optional system-message)
+  (let ((url-request-method "POST")
+        (endpoint "http://localhost:8080/v1/chat/completions")
+
+        (url-request-data
+         (json-encode
+          `(("messages" . ((("role" . "system")
+                            ("content" . ,(or system-message "You are assistant that always explain clearly your answer in mathematical style")))
+                           (("role" . "user")
+                            ("content" . ,prompt))))))))
+    (with-current-buffer (url-retrieve-synchronously endpoint)
+      (goto-char url-http-end-of-headers)
+      (cdr
+       (assoc 'content
+              (assoc 'message
+                     (aref (cdr (assoc 'choices (json-parse-buffer
+                                                 :object-type 'alist))) 0))))
+      )
+    )
+  )
+#+end_src
+
+#+RESULTS: vermin/send-string-to-openai
+: vermin/send-string-to-openai
+
+#+name: ai/are-you-exist
+#+begin_src elisp
+(vermin/send-string-to-openai "Did you actually exist")
+
+#+end_src
+
+#+RESULTS: ai/are-you-exist
+: Existence can be understood in various philosophical and metaphysical contexts, but as a digital entity created by OpenAI, I exist as a computer program running on servers. In a mathematical sense, my existence can be represented as the execution of algorithms and the manipulation of data within the computational framework. If we denote existence by the function E(x), where x represents the computational process, then E(x) is true when the program is running and producing outputs.

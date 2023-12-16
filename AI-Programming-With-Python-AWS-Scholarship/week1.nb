@@ -1,0 +1,102 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3028,         94]
+NotebookOptionsPosition[      2336,         73]
+NotebookOutlinePosition[      2731,         89]
+CellTagsIndexPosition[      2688,         86]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Scratchpad", "Section",
+ CellChangeTimes->{{3.9117084027426033`*^9, 
+  3.911708405972198*^9}},ExpressionUUID->"b4033638-9ad1-4be3-95e8-\
+055aa60c8571"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "SetDirectory", "[", 
+   "\"\</home/vermin/nhannht-projects/AI/AI-Programming-With-Python-AWS-\
+Scholarship\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.91170839092025*^9, 3.911708401078052*^9}, {
+  3.911708652995062*^9, 3.9117086536856213`*^9}},
+ CellLabel->
+  "In[452]:=",ExpressionUUID->"dd1611e9-b33e-47f8-9167-c40ef74b484d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NotebookSave", "[", 
+   RowBox[{
+    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Directory", "[", "]"}], ",", "\"\<week1.nb\>\""}], "}"}], 
+     "]"}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.91170864093813*^9, 3.911708788342798*^9}},
+ CellLabel->
+  "In[458]:=",ExpressionUUID->"2d2cddd3-b552-4f88-8029-447ac5c444d0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FileNameJoin", "nonopt", 
+   "\"Options expected (instead of \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"week1.nb\\\\\\\"\\\"}]\\)) beyond position \
+\\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"FileNameJoin\\\", \
+\\\"[\\\", \
+RowBox[{\\\"\\\\\\\"/home/vermin/nhannht-projects/AI/AI-Programming-With-\
+Python-AWS-Scholarship\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"week1.nb\\\\\\\"\\\
+\"}], \\\"]\\\"}]\\). An option must be a rule or a list of rules.\"", 2, 456,
+    38, 25344100824894120184, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.911708778452483*^9},
+ CellLabel->
+  "During evaluation of \
+In[456]:=",ExpressionUUID->"266ea7b0-cf5a-4724-8395-df68911189a1"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1020, 536.25},
+WindowMargins->{{0, Automatic}, {Automatic, 19.5}},
+FrontEndVersion->"13.3 for Linux x86 (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"98ad7df2-ccff-48d2-b63c-bd2097739248"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 157, 3, 67, "Section",ExpressionUUID->"b4033638-9ad1-4be3-95e8-055aa60c8571"],
+Cell[740, 27, 373, 9, 29, "Input",ExpressionUUID->"dd1611e9-b33e-47f8-9167-c40ef74b484d"],
+Cell[CellGroupData[{
+Cell[1138, 40, 448, 12, 29, "Input",ExpressionUUID->"2d2cddd3-b552-4f88-8029-447ac5c444d0"],
+Cell[1589, 54, 719, 15, 47, "Message",ExpressionUUID->"266ea7b0-cf5a-4724-8395-df68911189a1"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
