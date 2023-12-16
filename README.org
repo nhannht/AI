@@ -39,7 +39,7 @@
 : vermin/send-string-to-openai
 
 #+name: ai/are-you-exist
-#+begin_src elisp
+#+begin_src elisp :exports both
 (vermin/send-string-to-openai "Did you actually exist")
 
 #+end_src
