@@ -1,0 +1,19 @@
+#+title: Readme
+
+#+property: header-args :comments both :results values :exports both :noweb yes
+
+#+begin_src emacs-lisp :tangle yes
+default-directory
+#+end_src
+
+#+RESULTS:
+: /home/vermin/nhannht-projects/AI/AI-Programming-With-Python-AWS-Scholarship/dog-images-classification/
+- Let see, I have 50 task in this projects.
+  #+name: todos
+#+begin_src elisp :eval no
+(cl-map 'list
+                         (lambda (line)
+                           (format "- [ ] %s\n" line)
+                           )
+                         (string-split  (shell-command-to-string "fd -e py -d1 |xargs rg TODO") "\n"))
+#+end_src

@@ -9,7 +9,7 @@
 - [ ] Did they really know that they exist
 - [ ] Does machine have soul?
 - [ ] Does machine can understand the emojis they are using?
-- [ ] My collections on study AI, true AI, I don't care about those LLM.
+- [ ] My collections on study AI, true AI
 
 #+name: vermin/send-string-to-openai
 #+begin_src elisp

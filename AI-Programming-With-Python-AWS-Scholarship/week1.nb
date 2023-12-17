@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3028,         94]
-NotebookOptionsPosition[      2336,         73]
-NotebookOutlinePosition[      2731,         89]
-CellTagsIndexPosition[      2688,         86]
+NotebookDataLength[      2144,         71]
+NotebookOptionsPosition[      1580,         53]
+NotebookOutlinePosition[      1975,         69]
+CellTagsIndexPosition[      1932,         66]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36,8 +36,6 @@ Scholarship\>\"", "]"}], ";"}]], "Input",
  CellLabel->
   "In[452]:=",ExpressionUUID->"dd1611e9-b33e-47f8-9167-c40ef74b484d"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{
   RowBox[{"NotebookSave", "[", 
@@ -50,25 +48,7 @@ Cell[BoxData[
      "]"}]}], "]"}], ";"}]], "Input",
  CellChangeTimes->{{3.91170864093813*^9, 3.911708788342798*^9}},
  CellLabel->
-  "In[458]:=",ExpressionUUID->"2d2cddd3-b552-4f88-8029-447ac5c444d0"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FileNameJoin", "nonopt", 
-   "\"Options expected (instead of \
-\\!\\(\\*RowBox[{\\\"\\\\\\\"week1.nb\\\\\\\"\\\"}]\\)) beyond position \
-\\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"FileNameJoin\\\", \
-\\\"[\\\", \
-RowBox[{\\\"\\\\\\\"/home/vermin/nhannht-projects/AI/AI-Programming-With-\
-Python-AWS-Scholarship\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"week1.nb\\\\\\\"\\\
-\"}], \\\"]\\\"}]\\). An option must be a rule or a list of rules.\"", 2, 456,
-    38, 25344100824894120184, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.911708778452483*^9},
- CellLabel->
-  "During evaluation of \
-In[456]:=",ExpressionUUID->"266ea7b0-cf5a-4724-8395-df68911189a1"]
-}, Open  ]]
+  "In[458]:=",ExpressionUUID->"2d2cddd3-b552-4f88-8029-447ac5c444d0"]
 }, Open  ]]
 },
 WindowSize->{1020, 536.25},
@@ -91,10 +71,7 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 157, 3, 67, "Section",ExpressionUUID->"b4033638-9ad1-4be3-95e8-055aa60c8571"],
 Cell[740, 27, 373, 9, 29, "Input",ExpressionUUID->"dd1611e9-b33e-47f8-9167-c40ef74b484d"],
-Cell[CellGroupData[{
-Cell[1138, 40, 448, 12, 29, "Input",ExpressionUUID->"2d2cddd3-b552-4f88-8029-447ac5c444d0"],
-Cell[1589, 54, 719, 15, 47, "Message",ExpressionUUID->"266ea7b0-cf5a-4724-8395-df68911189a1"]
-}, Open  ]]
+Cell[1116, 38, 448, 12, 29, "Input",ExpressionUUID->"2d2cddd3-b552-4f88-8029-447ac5c444d0"]
 }, Open  ]]
 }
 ]
