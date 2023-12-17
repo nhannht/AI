@@ -32,7 +32,7 @@
 #           label isn't a dog.
 #
 ##
-# TODO 4: EDIT and ADD code BELOW to do the following that's stated in the 
+# DONE 4: EDIT and ADD code BELOW to do the following that's stated in the
 #       comments below that start with "TODO: 4" for the adjust_results4_isadog 
 #       function. Specifically EDIT and ADD code to define the 
 #       adjust_results4_isadog function. Notice that this function doesn't return

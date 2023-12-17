@@ -73,20 +73,20 @@ def calculates_results_stats(results_dic:Dict):
     # this function
     results_stats_dic = {
         "n_images" : len(results_dic),
-        "n_correct_dog": len({  k:v for k,v in results_dic.items() if v[3]==1 and v[4]==1}),
-        "n_dog_images": len({k:v for k,v in results_dic.items() if v[3] == 1}),
-        "n_correct_non_dog": len({k:v for k,v in results_dic.items() if v[3] == 0 and v[4] == 0}),
-        "n_images_not_dog": len({k:v for k,v in results_dic.items() if v[3] == 0}),
+        "n_correct_dogs": len({  k:v for k,v in results_dic.items() if v[3]==1 and v[4]==1}),
+        "n_dogs_img": len({k:v for k,v in results_dic.items() if v[3] == 1}),
+        "n_correct_non_dogs": len({k:v for k,v in results_dic.items() if v[3] == 0 and v[4] == 0}),
+        "n_notdogs_img": len({k:v for k,v in results_dic.items() if v[3] == 0}),
         "n_correct_breed": len({k:v for k,v in results_dic.items() if v[2]==1 and v[3] == 1}),
         "n_label_matches": len({k:v for k,v in results_dic.items() if v[2] == 1}),
-        "pct_correct_classify_dog": 0,
-        "pct_correct_classify_non_dog": 0,
-        "pct_correct_classify_dog_breed": 0,
+        "pct_correct_dogs": 0,
+        "pct_correct_notdogs": 0,
+        "pct_correct_breed": 0,
         "pct_label_match": 0,
     }
-    results_stats_dic["pct_correct_classify_dog"] = results_stats_dic["n_correct_dog"] / results_stats_dic["n_dog_images"]
-    results_stats_dic["pct_correct_classify_non_dog"] = results_stats_dic["n_correct_non_dog"] / results_stats_dic["n_images_not_dog"]
-    results_stats_dic["pct_correct_classify_dog_breed"] = results_stats_dic["n_correct_breed"] / results_stats_dic["n_dog_images"]
+    results_stats_dic["pct_correct_dogs"] = results_stats_dic["n_correct_dogs"] / results_stats_dic["n_dogs_img"]
+    results_stats_dic["pct_correct_notdogs"] = results_stats_dic["n_correct_non_dogs"] / results_stats_dic["n_notdogs_img"]
+    results_stats_dic["pct_correct_breed"] = results_stats_dic["n_correct_breed"] / results_stats_dic["n_dogs_img"]
     results_stats_dic["pct_label_match"] = results_stats_dic["n_label_matches"] / results_stats_dic["n_images"]
 
     return results_stats_dic

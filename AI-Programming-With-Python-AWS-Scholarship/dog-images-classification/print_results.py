@@ -26,7 +26,7 @@
 #         This function does not output anything other than printing a summary
 #         of the final results.
 ##
-# TODO 6: Define print_results function below, specifically replace the None
+# DONE 6: Define print_results function below, specifically replace the None
 #       below by the function definition of the print_results function. 
 #       Notice that this function doesn't to return anything because it  
 #       prints a summary of the results using results_dic and results_stats_dic
@@ -63,11 +63,17 @@ def print_results(results_dic, results_stats_dic, model,
            None - simply printing results.
     """
     print("Summary the results:")
-    print(results_stats_dic)
+    for k,v in results_stats_dic.items():
+        print(f"{k}:\t{v}")
     if print_incorrect_dogs:
         # base on the negative of correct_dog conditions
-        print({k:v for k,v in results_dic.items if v[3]!=1 or v[4] !=1 })
+        print("\n====\nAll incorrected classify dog images")
+        for k,v in {k:v for k,v in results_dic.items() if v[3]!=1 or v[4] !=1 }.items():
+            print(f"{k}:\t{v}")
         # negative of correct_breed condition
     if  print_incorrect_breed:
-        print({k:v for k,v in results_dic.items if v[2]!=1 or v[3]!=1 })
+        print("\n====\nAll incorrected classify breed images")
+        for k,v in {k:v for k,v in results_dic.items() if v[2]!=1 or v[3]!=1 }.items():
+            print(f"{k}:\t{v}")
+
 
